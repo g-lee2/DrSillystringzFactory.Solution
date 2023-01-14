@@ -40,5 +40,20 @@ namespace Factory.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+     public ActionResult Edit(int id)
+    {
+      Engineer thisEngineer = _db.Engineers.FirstOrDefault(engineer => engineer.EngineerId == id);
+      ViewBag.CategoryId = new SelectList(_db.Engineers, "EngineerId", "EngineerName");
+      return View(thisEngineer);
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Engineer engineer)
+    {
+      _db.Engineers.Update(engineer);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
