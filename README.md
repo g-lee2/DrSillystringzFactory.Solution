@@ -50,7 +50,7 @@ This is an application that allows the user(the factory manager) to create a lis
 1. Launch MySQL Workbench and open your local instance.
 2. Then follow [this link](https://www.learnhowtoprogram.com/c-and-net-part-time/database-basics/introduction-to-mysql-workbench-creating-a-database) with instructions to create a database, based on the data from the `Models` directory.
 3. You may also use migrations to create and update your database without having to manually create them yourself. Follow [this link](https://www.learnhowtoprogram.com/c-and-net-part-time/many-to-many-relationships/code-first-development-and-migrations) for instructions to install the right tools.
-4. You should have two tables called `engineers` and `machines`. One join table called `EngineerMachine` should also be present.
+4. You should have two tables called `Engineers` and `Machines`. One join table called `EngineerMachines` should also be present.
 
 
 ## Known Bugs
