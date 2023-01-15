@@ -6,6 +6,9 @@
 
 <h4>Add a new machine</h4>
 
+<p>@Html.ValidationMessageFor(model => model.MachineName)</p>
+<p>@Html.ValidationMessageFor(model => model.MachineBrand)</p>
+
 @using (Html.BeginForm())
 {
   @Html.Label("Machine Name")

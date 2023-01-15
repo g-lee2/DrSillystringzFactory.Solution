@@ -6,6 +6,9 @@
 
 <h4>Add a new engineer</h4>
 
+<p>@Html.ValidationMessageFor(model => model.EngineerName)</p>
+<p>@Html.ValidationMessageFor(model => model.ContactInfo)</p>
+
 @using (Html.BeginForm())
 {
   @Html.Label("Name")
